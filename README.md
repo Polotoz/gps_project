@@ -24,6 +24,10 @@ This part allows to analyze the various actions that the user can realize during
 
 Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une utilisation mobile tout en respectant l'utilisation d'HTML 5 et javascript. Nous avons réalisé plusieurs maquettes avant de pouvoir commencer à réaliser l'application.
 
+Vous pouvez trouver le mock-up complet contenant des liens cliquables à l'adresse suivante :
+
+
+
 Considering that the subject's instructions, this one had to be optimized for mobile use while respecting the use of HTML 5 and javascript. We realized several models before we could begin to realize the application.
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0001.jpg)
