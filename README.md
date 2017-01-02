@@ -14,3 +14,6 @@ Development of an HTML 5 mobile application to display a map, determine the curr
 
 2 - Diagrammes d'utilisation / Use cases
 
+Cette partie permet d'analyser les diverses actions que l'utilisateur pourra réaliser durant l'utilisation de l'application.
+
+This part allows to analyze the various actions that the user can realize during the use of the application.
