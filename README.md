@@ -28,3 +28,14 @@ Considering that the subject's instructions, this one had to be optimized for mo
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0001.jpg)
 
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0002.jpg)
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0003.jpg)
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0004.jpg)
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0005.jpg)
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0006.jpg)
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0007.jpg)
