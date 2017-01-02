@@ -19,3 +19,9 @@ Cette partie permet d'analyser les diverses actions que l'utilisateur pourra ré
 This part allows to analyze the various actions that the user can realize during the use of the application.
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/use_case.jpg)
+
+3 - Etude de l'Interface Homme Machine / Human Machine Interface Study
+
+Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une utilisation mobile tout en respectant l'utilisation d'HTML 5 et javascript. Nous avons réalisé plusieurs maquettes avant de pouvoir commencer à réaliser l'application.
+
+Considering that the subject's instructions, this one had to be optimized for mobile use while respecting the use of HTML 5 and javascript. We realized several models before we could begin to realize the application.
