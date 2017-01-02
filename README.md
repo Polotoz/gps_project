@@ -12,6 +12,22 @@ The subject of this project was :
 
 Development of an HTML 5 mobile application to display a map, determine the current location, save and share POIs on an interactive map. The implementation of the trajectogram will be a plus. It is simply to redo the Waze application.
 
+2 - Product Breakdown Structure
+
+Le PBS permet de découper l'application à réaliser en différentes catégories. Pour ce projet, il a été établi 3 catégories qui sont les suivantes :
+
+- Carte
+- Points d'intérêt
+- Trajectographie
+
+The PBS allows the application to be divided into different categories. For this project, three categories were established :
+
+- Map
+- POI
+- Directions
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/pbs.png)
+
 2 - Diagrammes d'utilisation / Use cases
 
 Cette partie permet d'analyser les diverses actions que l'utilisateur pourra réaliser durant l'utilisation de l'application.
