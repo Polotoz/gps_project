@@ -28,7 +28,7 @@ The PBS allows the application to be divided into different categories. For this
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/pbs.png)
 
-2 - Diagrammes d'utilisation / Use cases
+3 - Diagrammes d'utilisation / Use cases
 
 Cette partie permet d'analyser les diverses actions que l'utilisateur pourra réaliser durant l'utilisation de l'application.
 
@@ -36,7 +36,7 @@ This part allows to analyze the various actions that the user can realize during
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/use_case.jpg)
 
-3 - Etude de l'Interface Homme Machine / Human Machine Interface Study
+4 - Etude de l'Interface Homme Machine / Human Machine Interface Study
 
 Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une utilisation mobile tout en respectant l'utilisation d'HTML 5 et javascript. Nous avons réalisé plusieurs maquettes avant de pouvoir commencer à réaliser l'application.
 
@@ -64,3 +64,21 @@ https://github.com/Polotoz/gps_project/blob/master/mock_ups/gps_project_mu.pdf
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0006.jpg)
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0007.jpg)
+
+5 - Choix techniques / Technical choices
+
+Les spécifications vis à vis des choix techniques étaient libres.
+En effet, voici ce qu'indiquait la consigne :
+
+"Côté serveur, il est possible de réaliser le projet en PHP ou en NODEJS. Côté client, l’utilisation de jQuery, d’AngularJS ou de toute autre librairie est possible."
+
+Lors d'un de nos précédents cours, un de nos professeurs nous a présenté plusieurs framework destinés au développement d'applications Web orientés mobiles :
+
+- JQuery mobile
+- ionic framework
+
+Après s'être informés sur ces deux frameworks, nous avons pu comparer leurs potentiels. 
+Nous voulions nous orienter vers un framework totalement inconnu pour nous et utilisant la librairie AngularJS.
+C'est pour cela que nous avons choisi le framework ionic, très populaire dans le domaine du développement d'applications mobiles.
+
+
