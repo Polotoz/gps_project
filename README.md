@@ -18,7 +18,7 @@ Cette partie permet d'analyser les diverses actions que l'utilisateur pourra ré
 
 This part allows to analyze the various actions that the user can realize during the use of the application.
 
-![alt tag](https://github.com/Polotoz/gps_project/blob/master/use_case.jpg)
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/use_case.jpg)
 
 3 - Etude de l'Interface Homme Machine / Human Machine Interface Study
 
@@ -26,9 +26,14 @@ Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une 
 
 Vous pouvez trouver le mock-up complet contenant des liens cliquables à l'adresse suivante :
 
-
+https://github.com/Polotoz/gps_project/blob/master/mock_ups/gps_project_mu.pdf
 
 Considering that the subject's instructions, this one had to be optimized for mobile use while respecting the use of HTML 5 and javascript. We realized several models before we could begin to realize the application.
+
+You can find the complete mock-up with clickable buttons here :
+
+https://github.com/Polotoz/gps_project/blob/master/mock_ups/gps_project_mu.pdf
+
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0001.jpg)
 
