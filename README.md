@@ -26,3 +26,5 @@ Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une 
 
 Considering that the subject's instructions, this one had to be optimized for mobile use while respecting the use of HTML 5 and javascript. We realized several models before we could begin to realize the application.
 
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0001.jpg)
+
