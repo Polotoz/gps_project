@@ -87,4 +87,4 @@ C'est pour cela que nous avons choisi le framework ionic, très populaire dans l
 
 7 - Modèle Physique de Données / Physical Data Model
 
-![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mpd_gps.jpg)
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mopd_gps.jpg)
