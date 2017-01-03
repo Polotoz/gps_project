@@ -81,4 +81,10 @@ Après s'être informés sur ces deux frameworks, nous avons pu comparer leurs p
 Nous voulions nous orienter vers un framework totalement inconnu pour nous et utilisant la librairie AngularJS.
 C'est pour cela que nous avons choisi le framework ionic, très populaire dans le domaine du développement d'applications mobiles.
 
+6 - Modèle Conceptuel de Données / Conceptual Data Model
 
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mcd_gps.jpg)
+
+7 - Modèle Physique de Données / Physical Data Model
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mpd_gps.jpg)
