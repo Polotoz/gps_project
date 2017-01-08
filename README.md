@@ -38,7 +38,7 @@ This part allows to analyze the various actions that the user can realize during
 
 4 - Work Breakdown Structure (WBS)
 
-![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/wbs.jpg)
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/wbs.png)
 
 5 - Etude de l'Interface Homme Machine / Human Machine Interface Study
 
