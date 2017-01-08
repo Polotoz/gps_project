@@ -38,6 +38,10 @@ This part allows to analyze the various actions that the user can realize during
 
 4 - Work Breakdown Structure (WBS)
 
+Le WBS nous permet de décomposer le projet visuellement en unité gérable et appréhendable par tous les membres de l'équipe, chaques niveau du WBS permettant d'approfondir le detail des tâches jusqu'au niveau final.
+
+The WBS allow us to decompose the project visually into a manageable and apprehendable unit for all the member of the team. EachWBS level allowing to deepen the detail of the task to the final level.
+
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/wbs.png)
 
 5 - Etude de l'Interface Homme Machine / Human Machine Interface Study
@@ -85,4 +89,29 @@ Après s'être informés sur ces deux frameworks, nous avons pu comparer leurs p
 Nous voulions nous orienter vers un framework totalement inconnu pour nous et utilisant la librairie AngularJS.
 C'est pour cela que nous avons choisi le framework ionic, très populaire dans le domaine du développement d'applications mobiles.
 
+5 - 1 - Ionic
+
+Ionic est un framework basé sur AngularJS et Apache Cordova permettant de créer un projet multisupport en utilisant la technologie web tel que HTML, CSS, Javascript, afin de générer des applications IOS, Android, Chrome, Windows mobile, ...
+
+Ionic nous permet afin de concevoir les interfaces d'utiliser les langages web que l'on pourrait comparer au final comme une sorte de Twitter Bootstrap permettant à l'application de gérer une grande majorité de format de périphérique (responsive design)
+
+La gestion de la logique est des données est assuré quand à elle par le framework Angular. Ce framework d'application web nous fournit une bonne structure d'application et la possibilité d'écrire des applications complètes rapidement.
+
+Nous utilisons Apache Cordova pour générer les applications dites hybrides. Celui-ci gère la communication entre le navigateur et les API natives. Le noyau de Cordova fournit beaucoup de fonctionnalités comme l'accès au GPS, à la caméra ou encore aux informations du périphérique.
+
+Nous avons choisis cette technologie car elle rentrait à 100% dans les critères de notre projet scolaire à savoir la technologie web.
+
+Ionic is a framework based on AngularJS and Apache Cordova to create a multisupport project using web technology such as HTML, CSS, Javascript, to generate IOS, Android, Chrome or Windows Mobile Applications.
+
+[English trad à finir]
+
+
+5 - 2 - AngularJS
+
+AngularJS est un framework construit autour de concepts clés et de bonnes pratiques du développement web incontournable dans le monde du développement actuel :
+  - Architecture MVC premettant une stricte séparation entre les données, la présentation des données et les actions possible
+  - le Data Binding permettant un lien de donnée entre l'HTML et le Javascript
+  - la manipulation du DOM via des directives permettant de simplifier la création de code étant à l'origine difficilement maintenable et difficilement testable.
+  
+5 - 3 API Google Map
 
