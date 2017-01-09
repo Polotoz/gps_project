@@ -98,7 +98,7 @@ https://github.com/Polotoz/gps_project/blob/master/mock_ups/gps_project_mu.pdf
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0007.jpg)
 
-## 5 - Choix techniques / Technical choices
+## 5 - Choix techniques côté client / Technical choices client side
 
 Les spécifications vis à vis des choix techniques étaient libres.
 En effet, voici ce qu'indiquait la consigne :
@@ -142,18 +142,25 @@ AngularJS est un framework construit autour de concepts clés et de bonnes prati
 
 =======
 
-## 6 - Modèle Conceptuel de Données / Conceptual Data Model
+## 6 - Choix techniques côté serveur / Technical choices server side
+
+### 6 - 1 - PHP
+
+### 6 - 2 - MySQL
+
+
+## 7 - Modèle Conceptuel de Données / Conceptual Data Model
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mcd_gps.jpg)
 
-## 7 - Modèle Physique de Données / Physical Data Model
+## 8 - Modèle Physique de Données / Physical Data Model
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mopd_gps.jpg)
 
-## 8 - Diagramme de classe / Class Diagram
+## 9 - Diagramme de classe / Class Diagram
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
 
-## 9 - Diagramme de sequence / Sequence Diagram
+## 10 - Diagramme de sequence / Sequence Diagram
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps.jpg)
