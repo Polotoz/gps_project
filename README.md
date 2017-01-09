@@ -25,6 +25,8 @@ Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PH
 
 - Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
 
+[English trad à finir]
+
 ## 1 - Présentation du projet / Project display
 
 Ce projet a été réalisé dans le cadre de la formation de Responsable en Ingénierie des Logiciels au sein du CESI de Labège.
@@ -140,14 +142,17 @@ AngularJS est un framework construit autour de concepts clés et de bonnes prati
   
 ### 5 - 3 API Google Map
 
-=======
+TODO
 
 ## 6 - Choix techniques côté serveur / Technical choices server side
 
 ### 6 - 1 - PHP
 
+TODO (+ PDO)
+
 ### 6 - 2 - MySQL
 
+TODO
 
 ## 7 - Modèle Conceptuel de Données / Conceptual Data Model
 
