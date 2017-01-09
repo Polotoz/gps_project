@@ -114,4 +114,19 @@ AngularJS est un framework construit autour de concepts clés et de bonnes prati
   - la manipulation du DOM via des directives permettant de simplifier la création de code étant à l'origine difficilement maintenable et difficilement testable.
   
 5 - 3 API Google Map
+=======
+6 - Modèle Conceptuel de Données / Conceptual Data Model
 
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mcd_gps.jpg)
+
+7 - Modèle Physique de Données / Physical Data Model
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mopd_gps.jpg)
+
+8 - Diagramme de classe / Class Diagram
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
+
+9 - Diagramme de sequence / Sequence Diagram
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps.jpg)
