@@ -80,7 +80,8 @@ $rootScope, $cordovaNetwork, Markers, $ionicPopup, $interval, $http, Connectivit
         //On déclare la création de la carte avec un zoom à 25
 	map = new google.maps.Map(document.getElementById('map'), {   
                                     zoom: 25,
-                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+				    disableDefaultUI: true
                                 });	          
         
         //On déclare le marker de la position de l'utilisateur
