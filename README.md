@@ -93,9 +93,9 @@ C'est pour cela que nous avons choisi le framework ionic, très populaire dans l
 
 Ionic est un framework basé sur AngularJS et Apache Cordova permettant de créer un projet multisupport en utilisant la technologie web tel que HTML, CSS, Javascript, afin de générer des applications IOS, Android, Chrome, Windows mobile, ...
 
-Ionic nous permet afin de concevoir les interfaces d'utiliser les langages web que l'on pourrait comparer au final comme une sorte de Twitter Bootstrap permettant à l'application de gérer une grande majorité de format de périphérique (responsive design)
+Ionic nous permet de concevoir les interfaces et d'utiliser les langages web que l'on pourrait comparer au final comme une alternative de Twitter Bootstrap permettant à l'application de gérer une grande majorité de format de périphérique (responsive design).
 
-La gestion de la logique est des données est assuré quand à elle par le framework Angular. Ce framework d'application web nous fournit une bonne structure d'application et la possibilité d'écrire des applications complètes rapidement.
+La gestion de la logique et des données est assurée quand à elle par le framework Javascript Angular. Ce framework d'application web nous fournit une bonne structure d'application et la possibilité d'écrire des applications complètes rapidement.
 
 Nous utilisons Apache Cordova pour générer les applications dites hybrides. Celui-ci gère la communication entre le navigateur et les API natives. Le noyau de Cordova fournit beaucoup de fonctionnalités comme l'accès au GPS, à la caméra ou encore aux informations du périphérique.
 
