@@ -19,6 +19,8 @@ Côté serveur, vous aurez besoin d'un serveur de base de données Mysql configu
 - Login : root
 - Password : admin
 
+Lancez le script d'installation de la base de données présente dans le dossier "Serveur" (fichier en .sql).
+
 Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PHP.
 
 - Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
