@@ -1,6 +1,29 @@
 # gps_project
 
-1 - Présentation du projet / Project display
+## Utiliser le projet / Using this project
+
+Afin d'utiliser ce projet, veuillez avoir Node.js d'installé sur votre machine.
+
+- Clonez le repository gitHub : `git clone https://github.com/Polotoz/gps_project.git`.
+- Installez npm `npm install -g npm`.
+- Lancez `npm install` depuis la racine du projet.
+- Installez ionic : `npm install -g ionic`.
+- Installez SASS : `ionic setup sass`.
+- Installez bower : `npm install -g bower`.
+- Lancez la commande : `bower install`.
+- Installez Cordova : `bower install ngCordova` et le plugin de géolocalisation `cordova plugin add cordova-plugin-geolocation`.
+- Lancez `ionic serve` depuis la racine du projet.
+
+Côté serveur, vous aurez besoin d'un serveur de base de données Mysql configuré de la sorte :
+
+- Login : root
+- Password : admin
+
+Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PHP.
+
+- Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
+
+## 1 - Présentation du projet / Project display
 
 Ce projet a été réalisé dans le cadre de la formation de Responsable en Ingénierie des Logiciels au sein du CESI de Labège.
 Le sujet du projet était le suivant :
