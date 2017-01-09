@@ -37,7 +37,7 @@ The subject of this project was :
 
 Development of an HTML 5 mobile application to display a map, determine the current location, save and share POIs on an interactive map. The implementation of the trajectogram will be a plus. It is simply to redo the Waze application.
 
-2 - Product Breakdown Structure
+## 2 - Product Breakdown Structure
 
 Le PBS permet de découper l'application à réaliser en différentes catégories. Pour ce projet, il a été établi 3 catégories qui sont les suivantes :
 
@@ -53,7 +53,7 @@ The PBS allows the application to be divided into different categories. For this
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/pbs.png)
 
-3 - Diagrammes d'utilisation / Use cases
+## 3 - Diagrammes d'utilisation / Use cases
 
 Cette partie permet d'analyser les diverses actions que l'utilisateur pourra réaliser durant l'utilisation de l'application.
 
@@ -61,7 +61,7 @@ This part allows to analyze the various actions that the user can realize during
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/use_case.jpg)
 
-4 - Work Breakdown Structure (WBS)
+## 4 - Work Breakdown Structure (WBS)
 
 Le WBS nous permet de décomposer le projet visuellement en unité gérable et appréhendable par tous les membres de l'équipe, chaques niveau du WBS permettant d'approfondir le detail des tâches jusqu'au niveau final.
 
@@ -69,7 +69,7 @@ The WBS allow us to decompose the project visually into a manageable and apprehe
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/wbs.png)
 
-5 - Etude de l'Interface Homme Machine / Human Machine Interface Study
+## 5 - Etude de l'Interface Homme Machine / Human Machine Interface Study
 
 Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une utilisation mobile tout en respectant l'utilisation d'HTML 5 et javascript. Nous avons réalisé plusieurs maquettes avant de pouvoir commencer à réaliser l'application.
 
@@ -98,7 +98,7 @@ https://github.com/Polotoz/gps_project/blob/master/mock_ups/gps_project_mu.pdf
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/0007.jpg)
 
-5 - Choix techniques / Technical choices
+## 5 - Choix techniques / Technical choices
 
 Les spécifications vis à vis des choix techniques étaient libres.
 En effet, voici ce qu'indiquait la consigne :
@@ -114,7 +114,7 @@ Après s'être informés sur ces deux frameworks, nous avons pu comparer leurs p
 Nous voulions nous orienter vers un framework totalement inconnu pour nous et utilisant la librairie AngularJS.
 C'est pour cela que nous avons choisi le framework ionic, très populaire dans le domaine du développement d'applications mobiles.
 
-5 - 1 - Ionic
+### 5 - 1 - Ionic
 
 Ionic est un framework basé sur AngularJS et Apache Cordova permettant de créer un projet multisupport en utilisant la technologie web tel que HTML, CSS, Javascript, afin de générer des applications IOS, Android, Chrome, Windows mobile, ...
 
@@ -131,27 +131,29 @@ Ionic is a framework based on AngularJS and Apache Cordova to create a multisupp
 [English trad à finir]
 
 
-5 - 2 - AngularJS
+### 5 - 2 - AngularJS
 
 AngularJS est un framework construit autour de concepts clés et de bonnes pratiques du développement web incontournable dans le monde du développement actuel :
   - Architecture MVC premettant une stricte séparation entre les données, la présentation des données et les actions possible
   - le Data Binding permettant un lien de donnée entre l'HTML et le Javascript
   - la manipulation du DOM via des directives permettant de simplifier la création de code étant à l'origine difficilement maintenable et difficilement testable.
   
-5 - 3 API Google Map
+### 5 - 3 API Google Map
+
 =======
-6 - Modèle Conceptuel de Données / Conceptual Data Model
+
+## 6 - Modèle Conceptuel de Données / Conceptual Data Model
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mcd_gps.jpg)
 
-7 - Modèle Physique de Données / Physical Data Model
+## 7 - Modèle Physique de Données / Physical Data Model
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mopd_gps.jpg)
 
-8 - Diagramme de classe / Class Diagram
+## 8 - Diagramme de classe / Class Diagram
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
 
-9 - Diagramme de sequence / Sequence Diagram
+## 9 - Diagramme de sequence / Sequence Diagram
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps.jpg)
