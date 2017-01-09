@@ -88,3 +88,11 @@ C'est pour cela que nous avons choisi le framework ionic, très populaire dans l
 7 - Modèle Physique de Données / Physical Data Model
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mopd_gps.jpg)
+
+8 - Diagramme de classe / Class Diagram
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
+
+9 - Diagramme de sequence / Sequence Diagram
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps.jpg)
