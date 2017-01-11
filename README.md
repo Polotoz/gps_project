@@ -26,6 +26,7 @@ Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PH
 
 - Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
 
+Pour une meilleure expérience, utilisez l'application depuis le navigateur Google Chrome
 ------------------------------------------------------------------------------------------------------
 
 Node.js need to be installed on your machine.
@@ -51,6 +52,8 @@ Launche the .sql script from the MySQL Server (folder "Serveur").
 You need au Web server with PHP5 installed on it.
 
 - Move the php files to the "www" Web server root.
+
+For a better experience, please use this application with Google Chrome
 
 ## 1 - Présentation du projet / Project display
 
