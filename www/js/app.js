@@ -189,14 +189,14 @@ script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
     
     //Fonction permettant de charger tous les markers à proximité de l'utilisateur et de les afficher sur la map
     function loadMarkers(latLng){
-	       
-//        function setMapOnAll(map) {
-//                    for (var i = 0; i < markersList.length; i++) {
-//	   		markersList[i].setMap(map);
-//                    }
-//		}
-//                
-//	setMapOnAll(null);
+	//On vide le cache de markers       
+        function setMapOnAll(map) {
+                    for (var i = 0; i < markersList.length; i++) {
+	   		markersList[i].setMap(map);
+                    }
+		}
+                
+	setMapOnAll(null);
 	markersList = [];
         
         //Récupère tous les markers à proximité
@@ -233,138 +233,189 @@ script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
 //            });
         }); 
     }
-
+    
+    /**
+     * Fonction permettant de créer un ionicPopup à chaque clic sur un marker avec les infos de celui ci
+     * @param {type} distM
+     * @param {type} nom
+     * @param {type} id
+     * @returns {undefined}
+     */
     function actionClickMarker(distM, nom, id){
             	
-                var distance = Math.floor( distM );
-                var myPopup = $ionicPopup.show({
-                    template: ""+nom+" à "+distance+" m",
-                    title: "Evenement",    
-                    buttons: [
-                    { 
-                        text: 'Plus là',
-                        onTap: function(e) {
-                            $http.post("api/popUpdate.php",'{"id":'+id+'}')
-                            .success(function(data, status, headers, config){
-                                myPopup.close();
-                            });       
-                        }}, {
-                        text: '<b>Encore là</b>',
-                        type: 'button-positive',
-                        onTap: function(e) {
-                            myPopup.close();        
-                        }
-                        }
-                 ]
-              });
-  }
-  
-  function addConnectivityListeners(){
- 
-    if(ionic.Platform.isWebView()){
- 
-      // Regarde si la map est déjà chargée quand l'utilisateur redeviens en ligne
-      $rootScope.$on('$cordovaNetwork:online', function(event, networkState){
-        checkLoaded();
-      });
- 
-      // Désactive la carte si l'utilisateur est hors ligne
-      $rootScope.$on('$cordovaNetwork:offline', function(event, networkState){
-        disableMap();
-      });
- 
+        var distance = Math.floor( distM );
+        var myPopup = $ionicPopup.show({
+            template: ""+nom+" à "+distance+" m",
+            title: "Evenement",    
+            buttons: 
+            [
+                { 
+                    text: 'Plus là',
+                    onTap: function(e) {
+                    $http.post("api/popUpdate.php",'{"id":'+id+'}')
+                    .success(function(data, status, headers, config){
+                        myPopup.close();
+                    });       
+                    }
+                }, 
+                {
+                    text: '<b>Encore là</b>',
+                    type: 'button-positive',
+                    onTap: function(e) {
+                        myPopup.close();        
+                    }
+                }
+            ]
+            });
     }
-    else {
- 
-      window.addEventListener("online", function(e) {
-        checkLoaded();
-      }, false);    
- 
-      window.addEventListener("offline", function(e) {
-        disableMap();
-      }, false);  
-    }
- 
-  }
-  
-  
-  return {
-    init: function(key){
- 
-      if(typeof key != "undefined"){
-        apiKey = key;
-      }
- 
-      if(typeof google == "undefined" || typeof google.maps == "undefined"){
- 
-        disableMap();
- 
-        if(ConnectivityMonitor.isOnline()){
-          loadGoogleMaps();
+    //Fonction écoutant le statut de connexion de l'utilisateur
+    function addConnectivityListeners(){
+        if(ionic.Platform.isWebView()){
+            // Regarde si la map est déjà chargée quand l'utilisateur redeviens en ligne
+            $rootScope.$on('$cordovaNetwork:online', function(event, networkState){
+              checkLoaded();
+            });
+            // Désactive la carte si l'utilisateur est hors ligne
+            $rootScope.$on('$cordovaNetwork:offline', function(event, networkState){
+              disableMap();
+            });
         }
-      }
-      else {
-        if(ConnectivityMonitor.isOnline()){
-          initMap();
-          enableMap();
-        } else {
-          disableMap();
+        else {
+          //Regarde si la map est déjà chargée quand l'utilisateur redeviens en ligne
+          window.addEventListener("online", function(e) {
+            checkLoaded();
+          }, false);    
+          //Désactive la carte si l'utilisateur est hors ligne
+          window.addEventListener("offline", function(e) {
+            disableMap();
+          }, false);  
         }
-      }
- 
-      addConnectivityListeners();
- 
+    }  
+    return {
+        init: function(key){
+            //On regarde si l'APIkey est définie
+            if(typeof key != "undefined"){
+                apiKey = key;
+            }
+            //Si le type de google est "undefined"
+            if(typeof google == "undefined" || typeof google.maps == "undefined"){
+                //On masque la carte
+                disableMap();
+                //Si l'utilisateur est en ligne, on recharge le service google maps sans apiKey
+                if(ConnectivityMonitor.isOnline()){
+                    loadGoogleMaps();
+                }
+            }
+            else {
+                //Sinon on recharge la carte
+                if(ConnectivityMonitor.isOnline()){
+                    initMap();
+                    enableMap();
+                } else {
+                    disableMap();
+                }
+            }
+            addConnectivityListeners();
+        }
     }
-  }
-
 })
 
+/**
+ * Factory permettant de gérer l'état de connexion de l'utilisateur
+ * @returns {Boolean}
+ */
 .factory('ConnectivityMonitor', function($rootScope, $cordovaNetwork){
  
-  return {
-    isOnline: function(){
- 
-      if(ionic.Platform.isWebView()){
-        return $cordovaNetwork.isOnline();    
-      } else {
-        return navigator.onLine;
-      }
- 
-    },
-    ifOffline: function(){
- 
-      if(ionic.Platform.isWebView()){
-        return !$cordovaNetwork.isOnline();    
-      } else {
-        return !navigator.onLine;
-      }
- 
+    return {
+        //retourne le comportement lorsque l'utilisateur est en ligne
+        isOnline: function(){
+          if(ionic.Platform.isWebView()){
+            return $cordovaNetwork.isOnline();    
+          } else {
+            return navigator.onLine;
+          }
+        },
+        //retourne le comportement lorsque l'utilisateur est hors ligne
+        ifOffline: function(){
+          if(ionic.Platform.isWebView()){
+            return !$cordovaNetwork.isOnline();    
+          } else {
+            return !navigator.onLine;
+          }
+        }
     }
-  }
 })
 
-
+/*
+ * Controller permettant d'enregistrer les alertes et de gérer le menu déroulant
+ */
 .controller('MapCtrl', function($scope, $state, $cordovaGeolocation, $ionicPopover, $http) {
 
-	//Sauvegarder les coordonnées signalées par l'utilisateur en base
-	$scope.saveDetails = function(a){
-    var options = {timeout: 10000, enableHighAccuracy: true};
-
-    $cordovaGeolocation.getCurrentPosition(options).then(function(position){
-
-      	var lat = position.coords.latitude;
-      	var lgt = position.coords.longitude;
-
-        $http.post("api/saveDetails.php",'{"lat":'+lat+', "lgt" :'+lgt+', "type" :"'+a+'"}')
-        .success(function(data, status, headers, config){
+    //Sauvegarder les coordonnées signalées par l'utilisateur en base
+    $scope.saveDetails = function(a){
+        var options = {timeout: 10000, enableHighAccuracy: true};
+        //On recherche la position où le marker à été émis
+        $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+            var lat = position.coords.latitude;
+            var lgt = position.coords.longitude;
+            //On envoi les données au serveur afin qu'il enregistre en base
+            $http.post("api/saveDetails.php",'{"lat":'+lat+', "lgt" :'+lgt+', "type" :"'+a+'"}')
+            .success(function(data, status, headers, config){
+            });
         });
-    });
-	}
+    }
 
-  $ionicPopover.fromTemplateUrl('templates/popover.html', {
-    scope: $scope,
-  }).then(function(popover) {
-    $scope.popover = popover;
-  });
- 										
-});
+    this.rec = new webkitSpeechRecognition();
+  this.final = '';
+  var self = this;
+  
+  this.rec.continuous = false;
+  this.rec.lang = 'FR-fr';
+  this.rec.interimResults = true;
+  this.rec.onerror = function(event) {
+    console.log('error!');
+  };
+
+  $scope.start = function() {
+    self.rec.start();
+  };
+  
+  this.rec.onresult = function(event) {
+    for(var i = event.resultIndex; i < event.results.length; i++) {
+      if(event.results[i].isFinal) {
+	console.log(event.results[i].isFinal);
+        self.final = self.final.concat(event.results[i][0].transcript);
+        //console.log(event.results[i][0].transcript);
+	var commande = event.results[i][0].transcript;
+	if(commande == "accident"){
+		$scope.saveDetails('accident');
+	} 
+	else if (commande == "bouchon"){
+		$scope.saveDetails('bouchon');
+	}
+	else if (commande == "radar"){
+		$scope.saveDetails("radar");
+	}
+	else if (commande == "police"){
+		$scope.saveDetails('police');
+	}
+	else if (commande == "danger"){
+		$scope.saveDetails('danger');
+	}
+	else {
+        	$scope.final = commande;
+	} } else {
+        self.interim.push(event.results[i][0].transcript);
+        console.log('interim ' + event.results[i][0].transcript);
+        $scope.$apply();
+      }
+    }
+  };
+  
+    //ionicPopover correspond au menu déroulant contenant les alertes à signaler
+    $ionicPopover.fromTemplateUrl('templates/popover.html', {
+      scope: $scope,
+    }).then(function(popover) {
+      $scope.popover = popover;
+    });										
+})
