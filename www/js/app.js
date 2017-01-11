@@ -141,51 +141,53 @@ $rootScope, $cordovaNetwork, Markers, $ionicPopup, $interval, $http, Connectivit
 	$interval( function(){ callAtInterval(); }, 30000);   
     }
     
+    //Permet de cacher le loading
     function enableMap(){
-    $ionicLoading.hide();
-  }
- 
-  function disableMap(){
-    $ionicLoading.show({
-      template: "Vous devez être connecté pour utiliser l'application"
-    });
-  }
- 
-  function loadGoogleMaps(){
- 
-    $ionicLoading.show({
-      template: 'Chargement de la carte'
-    });
- 
-    //Cette fonction sera appelée lorsque le SDK sera chargé
-    window.mapInit = function(){
-      initMap();
-    };  
- 
-    //Créer un element afin de l'insérer dans la page
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.id = "googleMaps";
- 
-    if(apiKey){
-      script.src = 'http://maps.google.com/maps/api/js?key=' + apiKey 
-+ '&libraries=places,geometry&callback=mapInit';
+        $ionicLoading.hide();
     }
-    else {
-script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
+    
+    //Message affiché lorsque l'utilisateur n'est plus connecté
+    function disableMap(){
+        $ionicLoading.show({
+            template: "Vous devez être connecté pour utiliser l'application"
+        });
+    }
+  
+    //Fonction permettant d'afficher un message en attendant que la carte se charge
+    function loadGoogleMaps(){
+ 
+        $ionicLoading.show({
+            template: 'Chargement de la carte'
+        });
+
+        //Cette fonction sera appelée lorsque le SDK sera chargé
+        window.mapInit = function(){
+            initMap();
+        };  
+
+        //Créer un element afin de l'insérer dans la page
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.id = "googleMaps";
+
+        if(apiKey){
+            script.src = 'http://maps.google.com/maps/api/js?key=' + apiKey 
+            + '&libraries=places,geometry&callback=mapInit';
+        }
+        else {
+            script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
+        }
+        document.body.appendChild(script);
     }
  
-    document.body.appendChild(script);
- 
-  }
- 
-  function checkLoaded(){
-    if(typeof google == "undefined" || typeof google.maps == "undefined"){
-      loadGoogleMaps();
-    } else {
-      enableMap();
-    }       
-  }
+    function checkLoaded(){
+        if(typeof google == "undefined" || typeof google.maps == "undefined"){
+            loadGoogleMaps();
+        } 
+        else {
+            enableMap();
+        }       
+    }
     
     //Fonction permettant de charger tous les markers à proximité de l'utilisateur et de les afficher sur la map
     function loadMarkers(latLng){
@@ -364,54 +366,61 @@ script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
             });
         });
     }
-
+    
+    //Gestion de la partie speech
     this.rec = new webkitSpeechRecognition();
-  this.final = '';
-  var self = this;
+    this.final = '';
+    var self = this;
   
-  this.rec.continuous = false;
-  this.rec.lang = 'FR-fr';
-  this.rec.interimResults = true;
-  this.rec.onerror = function(event) {
-    console.log('error!');
-  };
+    this.rec.continuous = false;
+    this.rec.lang = 'FR-fr';
+    this.rec.interimResults = true;
+    this.rec.onerror = function(event) {
+        console.log('error!');
+    };
 
-  $scope.start = function() {
-    self.rec.start();
-  };
+    $scope.start = function() {
+        self.rec.start();
+    };
   
-  this.rec.onresult = function(event) {
-    for(var i = event.resultIndex; i < event.results.length; i++) {
-      if(event.results[i].isFinal) {
-        self.final = self.final.concat(event.results[i][0].transcript);
-	var commande = event.results[i][0].transcript;
-	if(commande == "accident"){
-		$scope.saveDetails('accident');
-	} 
-	else if (commande == "bouchon"){
-		$scope.saveDetails('bouchon');
-	}
-	else if (commande == "radar"){
-		$scope.saveDetails("radar");
-	}
-	else if (commande == "police"){
-		$scope.saveDetails('police');
-	}
-	else if (commande == "danger"){
-		$scope.saveDetails('danger');
-	}
-	else {
-        	$scope.final = commande;
-	} } else {
-        $scope.final = event.results[i][0].transcript;
-      }
-    }
-  };
+    this.rec.onresult = function(event) {
+        for(var i = event.resultIndex; i < event.results.length; i++) {
+            //Si l'utilisateur a terminé de parler
+            if(event.results[i].isFinal) {
+                //On concatène les résultats
+                self.final = self.final.concat(event.results[i][0].transcript);
+                var commande = event.results[i][0].transcript;
+                //Pour chaque type d'alerte on va l'enregistrer
+                if(commande == "accident"){
+                    $scope.saveDetails('accident');
+                } 
+                else if (commande == "bouchon"){
+                    $scope.saveDetails('bouchon');
+                }
+                else if (commande == "radar"){
+                    $scope.saveDetails("radar");
+                }
+                else if (commande == "police"){
+                    $scope.saveDetails('police');
+                }
+                else if (commande == "danger"){
+                    $scope.saveDetails('danger');
+                }
+                else {
+                    $scope.final = commande;
+                } 
+            } 
+            //Sinon on prend ça comme une addresse
+            else {
+                $scope.final = event.results[i][0].transcript;
+            }
+        }
+    };
   
     //ionicPopover correspond au menu déroulant contenant les alertes à signaler
     $ionicPopover.fromTemplateUrl('templates/popover.html', {
-      scope: $scope,
+        scope: $scope,
     }).then(function(popover) {
-      $scope.popover = popover;
+        $scope.popover = popover;
     });										
 })
