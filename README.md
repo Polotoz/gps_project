@@ -26,6 +26,8 @@ Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PH
 
 - Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
 
+------------------------------------------------------------------------------------------------------
+
 Node.js need to be installed on your machine.
 
 - Clone the repository : `git clone https://github.com/Polotoz/gps_project.git`.
