@@ -168,4 +168,4 @@ TODO
 
 ## 10 - Diagramme de sequence / Sequence Diagram
 
-![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps.jpg)
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps_1.jpg)
