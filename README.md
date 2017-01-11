@@ -59,6 +59,8 @@ Le sujet du projet était le suivant :
 
 Développement d’une application mobile HTML 5, permettant d’afficher une carte géographique, déterminer la position actuelle, enregistrer et partager des POI sur une carte interactive. La mise en place de la trajectographie sera un plus. Il s’agit tout simplement de refaire l’application Waze.
 
+------------------------------------------------------------------------------------------------------
+
 This project was realized during the formation of Software Engineer in the CESI of Labège.
 The subject of this project was :
 
@@ -72,6 +74,8 @@ Le PBS permet de découper l'application à réaliser en différentes catégorie
 - Points d'intérêt
 - Trajectographie
 
+------------------------------------------------------------------------------------------------------
+
 The PBS allows the application to be divided into different categories. For this project, three categories were established :
 
 - Map
@@ -84,6 +88,8 @@ The PBS allows the application to be divided into different categories. For this
 
 Cette partie permet d'analyser les diverses actions que l'utilisateur pourra réaliser durant l'utilisation de l'application.
 
+------------------------------------------------------------------------------------------------------
+
 This part allows to analyze the various actions that the user can realize during the use of the application.
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/use_case.jpg)
@@ -91,6 +97,8 @@ This part allows to analyze the various actions that the user can realize during
 ## 4 - Work Breakdown Structure (WBS)
 
 Le WBS nous permet de décomposer le projet visuellement en unité gérable et appréhendable par tous les membres de l'équipe, chaques niveau du WBS permettant d'approfondir le detail des tâches jusqu'au niveau final.
+
+------------------------------------------------------------------------------------------------------
 
 The WBS allow us to decompose the project visually into a manageable and apprehendable unit for all the member of the team. EachWBS level allowing to deepen the detail of the task to the final level.
 
@@ -103,6 +111,8 @@ Etant donné que la consigne du sujet, celle-ci devait être optimisé pour une 
 Vous pouvez trouver le mock-up complet contenant des liens cliquables à l'adresse suivante :
 
 https://github.com/Polotoz/gps_project/blob/master/mock_ups/gps_project_mu.pdf
+
+------------------------------------------------------------------------------------------------------
 
 Considering that the subject's instructions, this one had to be optimized for mobile use while respecting the use of HTML 5 and javascript. We realized several models before we could begin to realize the application.
 
@@ -152,6 +162,8 @@ La gestion de la logique et des données est assurée quand à elle par le frame
 Nous utilisons Apache Cordova pour générer les applications dites hybrides. Celui-ci gère la communication entre le navigateur et les API natives. Le noyau de Cordova fournit beaucoup de fonctionnalités comme l'accès au GPS, à la caméra ou encore aux informations du périphérique.
 
 Nous avons choisis cette technologie car elle rentrait à 100% dans les critères de notre projet scolaire à savoir la technologie web.
+
+------------------------------------------------------------------------------------------------------
 
 Ionic is a framework based on AngularJS and Apache Cordova to create a multisupport project using web technology such as HTML, CSS, Javascript, to generate IOS, Android, Chrome or Windows Mobile Applications.
 
