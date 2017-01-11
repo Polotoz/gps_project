@@ -383,9 +383,7 @@ script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
   this.rec.onresult = function(event) {
     for(var i = event.resultIndex; i < event.results.length; i++) {
       if(event.results[i].isFinal) {
-	console.log(event.results[i].isFinal);
         self.final = self.final.concat(event.results[i][0].transcript);
-        //console.log(event.results[i][0].transcript);
 	var commande = event.results[i][0].transcript;
 	if(commande == "accident"){
 		$scope.saveDetails('accident');
@@ -405,9 +403,7 @@ script.src = 'http://maps.google.com/maps/api/js?sensor=true&callback=mapInit';
 	else {
         	$scope.final = commande;
 	} } else {
-        self.interim.push(event.results[i][0].transcript);
-        console.log('interim ' + event.results[i][0].transcript);
-        $scope.$apply();
+        $scope.final = event.results[i][0].transcript;
       }
     }
   };
