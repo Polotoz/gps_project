@@ -26,7 +26,29 @@ Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PH
 
 - Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
 
-[English trad à finir]
+Node.js need to be installed on your machine.
+
+- Clone the repository : `git clone https://github.com/Polotoz/gps_project.git`.
+- Install npm `npm install -g npm`.
+- Execute `npm install` from the project root.
+- Install ionic : `npm install -g ionic`.
+- Install SASS : `ionic setup sass`.
+- Install bower : `npm install -g bower`.
+- Execute : `bower install`.
+- Install Cordova : `bower install ngCordova` and the geolocation plugin `cordova plugin add cordova-plugin-geolocation`.
+- Install network information plugin : `cordova plugin add cordova-plugin-network-information`
+- Execute `ionic serve` from the project root.
+
+Server side, you need a MySQL server running with the following params :
+
+- Login : root
+- Password : admin
+
+Launche the .sql script from the MySQL Server (folder "Serveur").
+
+You need au Web server with PHP5 installed on it.
+
+- Move the php files to the "www" Web server root.
 
 ## 1 - Présentation du projet / Project display
 
