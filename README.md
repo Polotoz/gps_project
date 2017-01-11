@@ -12,6 +12,7 @@ Afin d'utiliser ce projet, veuillez avoir Node.js d'installé sur votre machine.
 - Installez bower : `npm install -g bower`.
 - Lancez la commande : `bower install`.
 - Installez Cordova : `bower install ngCordova` et le plugin de géolocalisation `cordova plugin add cordova-plugin-geolocation`.
+- Installez le plugin network information : `cordova plugin add cordova-plugin-network-information`
 - Lancez `ionic serve` depuis la racine du projet.
 
 Côté serveur, vous aurez besoin d'un serveur de base de données Mysql configuré de la sorte :
