@@ -209,3 +209,13 @@ TODO
 ## 10 - Diagramme de sequence / Sequence Diagram
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps_1.jpg)
+
+## 11 - Fonctionnalités / Features
+
+Dans cette partie nous vous présenterons les différentes fonctionnalités de l'application.
+
+### 11 - 1 - Affichage de la carte / Map display
+
+Afin de pouvoir afficher la carte, nous avons mis en place l'API Google Maps que la société Google met à disposition de tous les développeurs à la limite de 25000 requêtes par jour.
+
+Cette carte est chargée depuis le 
