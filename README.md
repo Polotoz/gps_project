@@ -334,3 +334,9 @@ A user manual has been produced and is available via the following link :
 
 https://github.com/Polotoz/gps_project/blob/master/docs/user_manual.pdf
 
+# Cahier de test / Test booklet
+
+Un cahier de test a été effectué et est disponible via le lien suivant :
+A test booklet has been produced and is available via the following link :
+
+https://github.com/Polotoz/gps_project/blob/master/docs/test_gps.xls
