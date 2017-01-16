@@ -184,17 +184,50 @@ AngularJS est un framework construit autour de concepts clés et de bonnes prati
   
 ### 5 - 3 API Google Map
 
-TODO
+L'API Google map nous permet d'utiliser la quasi fonctionnalité de lar carte intéractive Google Map comme les évènement, la localisation, le calcul de trajet, les distances. L'utilisation de cette API nous est primordial afin d'afficher la carte aux utilisateurs et aussi de calculer les distances entre les utilisateurs et les évènements.
+
+The Google Map API allows us to use the near-functionnality of the Google Map interactive map such as events, location, route calculation, distances, ...
+The use of this API is essential to us to display map for users and also to calculate distances between users and events.
 
 ## 6 - Choix techniques côté serveur / Technical choices server side
 
 ### 6 - 1 - PHP
 
-TODO (+ PDO)
+Pour le choix technique côté serveur nous avons choisis PHP étant un langage interprété éxécuté au côté serveur et non au côté client
+ses principaux atouts sont :
+  - Une grande communauté de développeurs
+  - La gratuité
+  - La simplicité d'écriture des scripts
+  - La possibilité d'incluer le script PHP au sein d'une page HTML
+  - La simplicité d'interfaçage avec des bases de données (PDO, ...)
+  - L'intégration au sein de nombreux serveurs web (Apache, IIS, ...)
+
+Le code PHP est stocké sur notre serveur, il n'est donc pas visible directement par le client puisque dès qu'il en demande l'accès, le serveur l'interprète.
+
+------------------------------------------------------------------------------------------------------
+
+For the technical choice server side, we choose PHP as an interpreted language executed on the server side and not on the client side.
+It's main assets are :
+  - A large community of developers
+  - Free
+  - The simplicity if script writing
+  - The ability to include PHP scripts within an HTML page
+  - The simplicity of interfacing with databases (PDO, ...)
+  - Integration within many web servers (Apache, IIS, ...)
+
+The PHP code is stored on our server, it's therefore not directly visible to the client, since as soon as the client requests access, the server interprets it.
 
 ### 6 - 2 - MySQL
 
-TODO
+MySQL est un Système de Gestion de Base de Données Relationnelles (SGBRD) utilisant le langage SQL. C'est le SGBRD le plus utilisé de par sa communauté mais aussi de sa gratuité et de son côté logiciel Open Source. C'est pour ces raisons que nous avons choisis de partir sur cette technologie.
+
+Grâce à l'extension PDO (PHP Data Object) notre application est à même de communiquer avec notre base de données à 100% afin de pouvoir récupérer et insérer des informations.
+
+------------------------------------------------------------------------------------------------------
+
+MySQL is a Relational Database Management System (SGBRD) using the SQL language. It is the SGBRD the most used by the community but also it's a free and open source software. It's for these reasons that we have chosen to use this technology.
+
+With the PDO extension (PHP Data Object) our application is able to communicate with our database at 100% in order to retrieve and insert informations.
 
 ## 7 - Modèle Conceptuel de Données / Conceptual Data Model
 
