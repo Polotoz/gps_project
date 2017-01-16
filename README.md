@@ -235,3 +235,13 @@ Cette fonction fait appel à la factory 'Markers' qui, depuis sa fonction getMar
 La fonction loadMarker() récupère les résultats et ajoute chaque POI récupéré dans une liste qui est poussée vers la carte afin d'être ajoutée.
 
 Un listener est ajouté pour chaque POI afin de pouvoir gérer des ionicPopup lorsque l'utilisateur clique dessus. Ce listener appelle la fonction actionClickMarker() avec pour paramètres la distance entre le POI et l'utilisateur, le nom de l'évènement et son identifiant.
+
+TODO English
+
+### 11 - 3 -Itinéraires / Directions
+
+La partie itinéraire est gérée depuis une zone de saisie au niveau de la scope principale.
+
+Lorsqu'un changement apparaît, la factory 'GoogleMaps' appelle les Webservices DirectionDisplay et DirectionService mis à disposition par GoogleMaps afin de pouvoir calculer et afficher l'itinéraire sur la carte. Au départ de la fonction initMap(), les deux services sont initialisés et par la suite passés en paramètres des deux fonctions permettant de calculer et d'afficher l'itinéraire qui sont présentes dans le fichier direction.js.
+
+TODO English
