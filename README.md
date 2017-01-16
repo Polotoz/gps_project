@@ -260,3 +260,9 @@ L'utilisateur a la possibilité d'ajouter des POI en les déclarant depuis un bo
 Lorsqu'un utilisateur déclare un évènement, la fonction saveDetails() présente dans le contrôleur MapCtrl est appelée et envoi la position actuelle de l'utilisatteur ainsi que le type d'évènement par le biais d'une requête http POST. Le serveur enregistre en base ce nouveau POI et la fonction loadMarkers() l'affiche sur la carte si l'utilisateur est situé dans une distance d'un kilomètre.
 
 TODO English
+
+### 11 - 6 - Commandes vocales / Speech
+
+L'utilisateur a la possibilité d'ajouter des POI et de définir un itinéraire depuis l'application.
+Nous avons utilisé le Webservice Google Speech et mis en place des contrôle au niveau du MapCtrl.
+Lorsque l'utilisateur dit le nom d'un évènement en français, il est ajouté directement dans la base. Si il utilise la commande vocale afin d'avoir une direction, celle-ci est directement prise en compte et l'itinéraire s'affiche sur la carte.
