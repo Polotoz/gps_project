@@ -332,3 +332,5 @@ TODO English / Schema
 Un manuel utilisateur a été effectué et est disponible via le lien suivant :
 A user manual has been produced and is available via the following link :
 
+https://github.com/Polotoz/gps_project/blob/master/docs/user_manual.pdf
+
