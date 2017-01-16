@@ -226,5 +226,12 @@ La fonction loadGoogleMaps() permet d'afficher un popup ionicLoading le temps qu
 
 TODO English
 
-### 11 - 2 - Affichage des markers / POI Display
+### 11 - 2 - Affichage des POI / POI Display
 
+La récupération des POI se fait par le biais de la fonction loadMarker() située au sein de la factory 'GoogleMaps'.
+
+Cette fonction fait appel à la factory 'Markers' qui, depuis sa fonction getMarkers(), envoi une requête http GET avec pour paramètres la position actuelle et une distance qui est égale à 1.
+
+La fonction loadMarker() récupère les résultats et ajoute chaque POI récupéré dans une liste qui est poussée vers la carte afin d'être ajoutée.
+
+Un listener est ajouté pour chaque POI afin de pouvoir gérer des ionicPopup lorsque l'utilisateur clique dessus.
