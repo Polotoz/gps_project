@@ -300,6 +300,17 @@ L'utilisateur a la possibilité d'ajouter des POI et de définir un itinéraire 
 Nous avons utilisé l'API Web Speech Recognition qui permet au javascript d'accéder au micro du navigateur au niveau du MapCtrl.
 Lorsque l'utilisateur dit le nom d'un évènement en français, il est ajouté directement dans la base. Si il utilise la commande vocale afin d'avoir une direction, celle-ci est directement prise en compte et l'itinéraire s'affiche sur la carte.
 
+### 9 - 7 - Mode hors ligne / Offline mode
+
+La gestion du mode hors ligne a été effectué à l'aide d'un listener qui écoute en permanence si l'utilisateur est connecté ou non. Si l'utilisateur n'est pas connecté, un popup est affiché lui indiquant qu'il doit se reconnecter au réseau afin de pouvoir continuer à utiliser l'application.
+
+La fonction addConnectivityListeners() permet d'écouter le status de connection en faisant appel à la factory ConnectivityMonitor.
+
+La factory ConnectivityMonitor permet de gérer le status en retournant isOnline ou isOffline.
+
+Si l'utilisateur est 'isOnline' alors on affiche la carte à l'aide de la fonction enableMap().
+Si l'utilisateur est 'isOffline' alors on affiche un popup à l'aide de la fonction disableMap().
+
 ## 10 - Diagramme de classe / Class Diagram
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
