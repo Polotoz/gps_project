@@ -234,4 +234,4 @@ Cette fonction fait appel à la factory 'Markers' qui, depuis sa fonction getMar
 
 La fonction loadMarker() récupère les résultats et ajoute chaque POI récupéré dans une liste qui est poussée vers la carte afin d'être ajoutée.
 
-Un listener est ajouté pour chaque POI afin de pouvoir gérer des ionicPopup lorsque l'utilisateur clique dessus.
+Un listener est ajouté pour chaque POI afin de pouvoir gérer des ionicPopup lorsque l'utilisateur clique dessus. Ce listener appelle la fonction actionClickMarker() avec pour paramètres la distance entre le POI et l'utilisateur, le nom de l'évènement et son identifiant.
