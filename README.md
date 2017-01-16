@@ -210,7 +210,15 @@ TODO
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps_1.jpg)
 
-## 11 - Fonctionnalités / Features
+## 11 - Architecture
+
+La partie Vue est mise en place à l'aide du Framework ionic qui fournit un nombre important d'éléments de type responsive (Boutons, header, footer, popups). Elle utilise la technologie HTML5.
+La partie Contrôleur est gérée à l'aide du langage javascript Angular. Elle permet d'intéragir avec la vue à l'aide de la dépendance $scope et l'appel des fonctions à l'aide de directives de type 'ng'.
+La partie Modèle est mise en place directement sur le serveur de l'application et non sur la partie Client, des fonctions contenant des requêtes SQL sont appelées depuis la partie Client à l'aide de requêtes HTTP de type POST ou GET.
+
+TODO English / Schema
+
+## 12 - Fonctionnalités / Features
 
 Dans cette partie nous vous présenterons les différentes fonctionnalités de l'application.
 
