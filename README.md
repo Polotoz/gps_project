@@ -239,27 +239,11 @@ With the PDO extension (PHP Data Object) our application is able to communicate 
 
 # Conception
 
-## 9 - Diagramme de classe / Class Diagram
-
-![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
-
-## 10 - Diagramme de sequence / Sequence Diagram
-
-![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps_1.jpg)
-
-## 11 - Architecture
-
-La partie Vue est mise en place à l'aide du Framework ionic qui fournit un nombre important d'éléments de type responsive (Boutons, header, footer, popups). Elle utilise la technologie HTML5.
-La partie Contrôleur est gérée à l'aide du langage javascript Angular. Elle permet d'intéragir avec la vue à l'aide de la dépendance $scope et l'appel des fonctions à l'aide de directives de type 'ng'.
-La partie Modèle est mise en place directement sur le serveur de l'application et non sur la partie Client, des fonctions contenant des requêtes SQL sont appelées depuis la partie Client à l'aide de requêtes HTTP de type POST ou GET.
-
-TODO English / Schema
-
-## 12 - Fonctionnalités / Features
+## 9 - Fonctionnalités / Features
 
 Dans cette partie nous vous présenterons les différentes fonctionnalités de l'application.
 
-### 11 - 1 - Affichage de la carte / Map display
+### 9 - 1 - Affichage de la carte / Map display
 
 Afin de pouvoir afficher la carte, nous avons mis en place l'API Google Maps que la société Google met à disposition de tous les développeurs à la limite de 25000 requêtes par jour.
 
@@ -271,7 +255,7 @@ La fonction loadGoogleMaps() permet d'afficher un popup ionicLoading le temps qu
 
 TODO English
 
-### 11 - 2 - Affichage des POI / POI Display
+### 9 - 2 - Affichage des POI / POI Display
 
 La récupération des POI se fait par le biais de la fonction loadMarker() située au sein de la factory 'GoogleMaps'.
 
@@ -283,7 +267,7 @@ Un listener est ajouté pour chaque POI afin de pouvoir gérer des ionicPopup lo
 
 TODO English
 
-### 11 - 3 - Itinéraires / Directions
+### 9 - 3 - Itinéraires / Directions
 
 La partie itinéraire est gérée depuis une zone de saisie au niveau de la scope principale.
 
@@ -291,7 +275,7 @@ Lorsqu'un changement apparaît, la factory 'GoogleMaps' appelle les Webservices 
 
 TODO English
 
-### 11 - 4 - Validation des POI / Validation of POI
+### 9 - 4 - Validation des POI / Validation of POI
 
 Lorsqu'un utilisateur clique sur un des POI, un popup est affiché contenant le nom de l'évènement ainsi que la distance qui sépare l'utilisateur de ce POI. Il a aussi le choix entre valider ou dévalider un POI.
 Si l'utilisateur dévalider un POI, une fonction http POST permet de mettre à jour le POI via son identifiant passé en paramètre et le désactive.
@@ -299,16 +283,31 @@ Si l'utilisateur valide un POI, il reste actif en base.
 
 TODO English
 
-### 11 - 5 - Ajout de POI / POI add
+### 9 - 5 - Ajout de POI / POI add
 
 L'utilisateur a la possibilité d'ajouter des POI en les déclarant depuis un boutton ouvrant une liste d'évènements.
 Lorsqu'un utilisateur déclare un évènement, la fonction saveDetails() présente dans le contrôleur MapCtrl est appelée et envoi la position actuelle de l'utilisatteur ainsi que le type d'évènement par le biais d'une requête http POST. Le serveur enregistre en base ce nouveau POI et la fonction loadMarkers() l'affiche sur la carte si l'utilisateur est situé dans une distance d'un kilomètre.
 
 TODO English
 
-### 11 - 6 - Commandes vocales / Speech
+### 9 - 6 - Commandes vocales / Speech
 
 L'utilisateur a la possibilité d'ajouter des POI et de définir un itinéraire depuis l'application.
 Nous avons utilisé l'API Web Speech Recognition qui permet au javascript d'accéder au micro du navigateur au niveau du MapCtrl.
 Lorsque l'utilisateur dit le nom d'un évènement en français, il est ajouté directement dans la base. Si il utilise la commande vocale afin d'avoir une direction, celle-ci est directement prise en compte et l'itinéraire s'affiche sur la carte.
 
+## 10 - Diagramme de classe / Class Diagram
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/dc_pckg_gps.jpg)
+
+## 11 - Diagramme de sequence / Sequence Diagram
+
+![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/sequence_gps_1.jpg)
+
+## 12 - Architecture
+
+La partie Vue est mise en place à l'aide du Framework ionic qui fournit un nombre important d'éléments de type responsive (Boutons, header, footer, popups). Elle utilise la technologie HTML5.
+La partie Contrôleur est gérée à l'aide du langage javascript Angular. Elle permet d'intéragir avec la vue à l'aide de la dépendance $scope et l'appel des fonctions à l'aide de directives de type 'ng'.
+La partie Modèle est mise en place directement sur le serveur de l'application et non sur la partie Client, des fonctions contenant des requêtes SQL sont appelées depuis la partie Client à l'aide de requêtes HTTP de type POST ou GET.
+
+TODO English / Schema
