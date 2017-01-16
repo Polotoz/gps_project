@@ -223,3 +223,8 @@ Cette carte est chargée depuis la factory 'GoogleMaps' au sein de la fonction i
 La carte est définie à un zoom de 25 par défaut afin de permettre à l'utilisateur d'avoir un affichage de sa position optimal pour la navigation.
 
 La fonction loadGoogleMaps() permet d'afficher un popup ionicLoading le temps que la carte soit chargée.
+
+TODO English
+
+### 11 - 2 - Affichage des markers / POI Display
+
