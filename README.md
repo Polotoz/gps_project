@@ -27,6 +27,7 @@ Vous aurez également besoin d'un serveur Web configuré avec la version 5 de PH
 - Déplacez les sources présentes dans le dossier "Serveur" vers la racine "www" de votre serveur Web.
 
 Pour une meilleure expérience, utilisez l'application depuis le navigateur Google Chrome
+
 ------------------------------------------------------------------------------------------------------
 
 Node.js need to be installed on your machine.
