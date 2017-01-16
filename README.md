@@ -248,3 +248,15 @@ TODO English
 
 ### 11 - 4 - Validation des POI / Validation of POI
 
+Lorsqu'un utilisateur clique sur un des POI, un popup est affiché contenant le nom de l'évènement ainsi que la distance qui sépare l'utilisateur de ce POI. Il a aussi le choix entre valider ou dévalider un POI.
+Si l'utilisateur dévalider un POI, une fonction http POST permet de mettre à jour le POI via son identifiant passé en paramètre et le désactive.
+Si l'utilisateur valide un POI, il reste actif en base.
+
+TODO English
+
+### 11 - 5 - Ajout de POI / POI add
+
+L'utilisateur a la possibilité d'ajouter des POI en les déclarant depuis un boutton ouvrant une liste d'évènements.
+Lorsqu'un utilisateur déclare un évènement, la fonction saveDetails() présente dans le contrôleur MapCtrl est appelée et envoi la position actuelle de l'utilisatteur ainsi que le type d'évènement par le biais d'une requête http POST. Le serveur enregistre en base ce nouveau POI et la fonction loadMarkers() l'affiche sur la carte si l'utilisateur est situé dans une distance d'un kilomètre.
+
+TODO English
