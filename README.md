@@ -315,3 +315,9 @@ La partie Contrôleur est gérée à l'aide du langage javascript Angular. Elle 
 La partie Modèle est mise en place directement sur le serveur de l'application et non sur la partie Client, des fonctions contenant des requêtes SQL sont appelées depuis la partie Client à l'aide de requêtes HTTP de type POST ou GET.
 
 TODO English / Schema
+
+# Manuel utilisateur / User manual
+
+Un manuel utilisateur a été effectué et est disponible via le lien suivant :
+A user manual has been produced and is available via the following link :
+
