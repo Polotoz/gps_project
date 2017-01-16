@@ -267,5 +267,3 @@ L'utilisateur a la possibilité d'ajouter des POI et de définir un itinéraire 
 Nous avons utilisé l'API Web Speech Recognition qui permet au javascript d'accéder au micro du navigateur au niveau du MapCtrl.
 Lorsque l'utilisateur dit le nom d'un évènement en français, il est ajouté directement dans la base. Si il utilise la commande vocale afin d'avoir une direction, celle-ci est directement prise en compte et l'itinéraire s'affiche sur la carte.
 
-L'utilisation du l'API Web Speech Recognition est utilisé et permet 
-
