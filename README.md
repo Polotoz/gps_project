@@ -218,4 +218,8 @@ Dans cette partie nous vous présenterons les différentes fonctionnalités de l
 
 Afin de pouvoir afficher la carte, nous avons mis en place l'API Google Maps que la société Google met à disposition de tous les développeurs à la limite de 25000 requêtes par jour.
 
-Cette carte est chargée depuis le 
+Cette carte est chargée depuis la factory 'GoogleMaps' au sein de la fonction initMap().
+
+La carte est définie à un zoom de 25 par défaut afin de permettre à l'utilisateur d'avoir un affichage de sa position optimal pour la navigation.
+
+La fonction loadGoogleMaps() permet d'afficher un popup ionicLoading le temps que la carte soit chargée.
