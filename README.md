@@ -233,6 +233,10 @@ With the PDO extension (PHP Data Object) our application is able to communicate 
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mcd_gps.jpg)
 
+Deux tables ont été établies durant l'étude préalable. Une table list permettant d'enregistrer les POI et une table type permettant de stocker les différents types d'alertes.
+
+Two tables were established during the preliminary study. A list table for registering POIs and a standard table for storing the different types of alerts.
+
 ## 8 - Modèle Physique de Données / Physical Data Model
 
 ![alt tag](https://github.com/Polotoz/gps_project/blob/master/images/mopd_gps.jpg)
