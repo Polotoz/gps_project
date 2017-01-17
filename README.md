@@ -258,7 +258,15 @@ La carte est définie à un zoom de 25 par défaut afin de permettre à l'utilis
 
 La fonction loadGoogleMaps() permet d'afficher un popup ionicLoading le temps que la carte soit chargée.
 
-TODO English
+------------------------------------------------------------------------------------------------------
+
+In order to be able to display the map, we have set up the Google Maps API that the Google company makes available to all developers to the limit of 25000 requests per day.
+
+This map is loaded from the factory 'GoogleMaps' within the initMap() function.
+
+The map is set to a zoom of 25 by default to allow the user to have a view of its optimum position for navigation.
+
+The loadGoogleMaps() function displays an ionicLoading popup as long as the map is loaded.
 
 ### 9 - 2 - Affichage des POI / POI Display
 
@@ -270,7 +278,15 @@ La fonction loadMarker() récupère les résultats et ajoute chaque POI récupé
 
 Un listener est ajouté pour chaque POI afin de pouvoir gérer des ionicPopup lorsque l'utilisateur clique dessus. Ce listener appelle la fonction actionClickMarker() avec pour paramètres la distance entre le POI et l'utilisateur, le nom de l'évènement et son identifiant.
 
-TODO English
+------------------------------------------------------------------------------------------------------
+
+The recovery of the POIs is done through the loadMarker() function located within the factory 'GoogleMaps'.
+
+This function calls on the factory 'Markers' which, since its function getMarkers(), sends a request http GET with for parameters the current position and a distance which is equal to 1.
+
+The loadMarker() function retrieves the results and adds each retrieved POI to a list that is pushed to the map to be added.
+
+A listener is added for each POI in order to manage ionicPopup when the user clicks on it. This listener calls the actionClickMarker() function with parameters the distance between the POI and the user, the name of the event and its identifier.
 
 ### 9 - 3 - Itinéraires / Directions
 
@@ -278,7 +294,11 @@ La partie itinéraire est gérée depuis une zone de saisie au niveau de la scop
 
 Lorsqu'un changement apparaît, la factory 'GoogleMaps' appelle les Webservices DirectionDisplay et DirectionService mis à disposition par GoogleMaps afin de pouvoir calculer et afficher l'itinéraire sur la carte. Au départ de la fonction initMap(), les deux services sont initialisés et par la suite passés en paramètres des deux fonctions permettant de calculer et d'afficher l'itinéraire qui sont présentes dans le fichier direction.js.
 
-TODO English
+------------------------------------------------------------------------------------------------------
+
+The route part is managed from an input area at the main scope.
+
+When a change appears, the 'GoogleMaps' factory calls the DirectionDisplay and DirectionService Web Services provided by GoogleMaps in order to calculate and display the route on the map. At the start of the initMap() function, the two services are initialized and subsequently passed as parameters of the two functions for calculating and displaying the itinerary that are present in the direction.js file.
 
 ### 9 - 4 - Validation des POI / Validation of POI
 
@@ -286,14 +306,21 @@ Lorsqu'un utilisateur clique sur un des POI, un popup est affiché contenant le 
 Si l'utilisateur dévalider un POI, une fonction http POST permet de mettre à jour le POI via son identifiant passé en paramètre et le désactive.
 Si l'utilisateur valide un POI, il reste actif en base.
 
-TODO English
+------------------------------------------------------------------------------------------------------
+
+When a user clicks on one of the POIs, a popup is displayed containing the name of the event and the distance that separates the user from that POI. It also has the choice between validating or disabling a POI.
+If the user disables a POI, a http POST function allows to update the POI via its identifier passed parameter and deactivates it.
+If the user validates a POI, it remains active in the base.
 
 ### 9 - 5 - Ajout de POI / POI add
 
 L'utilisateur a la possibilité d'ajouter des POI en les déclarant depuis un boutton ouvrant une liste d'évènements.
 Lorsqu'un utilisateur déclare un évènement, la fonction saveDetails() présente dans le contrôleur MapCtrl est appelée et envoi la position actuelle de l'utilisatteur ainsi que le type d'évènement par le biais d'une requête http POST. Le serveur enregistre en base ce nouveau POI et la fonction loadMarkers() l'affiche sur la carte si l'utilisateur est situé dans une distance d'un kilomètre.
 
-TODO English
+------------------------------------------------------------------------------------------------------
+
+The user can add POIs by declaring them from a button opening a list of events.
+When a user declares an event, the saveDetails() function in the MapCtrl controller is invoked and sends the user's current location and event type through an http POST request. The server registers this new POI as a base and the loadMarkers () function displays it on the map if the user is located within a distance of one kilometer.
 
 ### 9 - 6 - Commandes vocales / Speech
 
