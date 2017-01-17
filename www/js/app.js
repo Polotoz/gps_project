@@ -138,7 +138,7 @@ $rootScope, $cordovaNetwork, Markers, $ionicPopup, $interval, $http, Connectivit
        		loadMarkers(latLng);	
             });
         }
-	$interval( function(){ callAtInterval(); }, 30000);   
+	$interval( function(){ callAtInterval(); }, 5000);   
     }
     
     //Permet de cacher le loading
@@ -230,9 +230,6 @@ $rootScope, $cordovaNetwork, Markers, $ionicPopup, $interval, $http, Connectivit
   	  
             }
 
-//            angular.forEach(markersList, function(value, key){
-//                console.log('tatata');
-//            });
         }); 
     }
     
