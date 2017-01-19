@@ -173,8 +173,13 @@ Nous avons choisis cette technologie car elle rentrait à 100% dans les critère
 
 Ionic is a framework based on AngularJS and Apache Cordova to create a multisupport project using web technology such as HTML, CSS, Javascript, to generate IOS, Android, Chrome or Windows Mobile Applications.
 
-[English trad à finir]
+Ionic allows us to design interfaces and use web languages ​​that could ultimately be compared as a Twitter Bootstrap alternative allowing the application to handle a large majority of responsive design.
 
+The management of logic and data is ensured by the Javascript Angular framework. This web application framework provides us with a good application structure and the ability to write complete applications quickly.
+
+We use Apache Cordova to generate so-called hybrid applications. It manages the communication between the browser and the native APIs. The core of Cordova provides many features such as access to GPS, camera or device information.
+
+We chose this technology because it came 100% in the criteria of our school project namely web technology.
 
 ### 5 - 2 - AngularJS
 
